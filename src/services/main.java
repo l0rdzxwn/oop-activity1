@@ -44,5 +44,6 @@ public class main {
         double cash = scanner.nextDouble();
         
         rec.printReceipt(cash);
+        rec.printInvoice(cash);
 	}
 }

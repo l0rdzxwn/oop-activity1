@@ -36,7 +36,7 @@ public class Receipt {
 		System.out.println("-----------------------");
 		System.out.println("Total     : " + "P   " + calculateTotalDue());
 		System.out.println("Cash      : " + "P   " +  cash);
-		System.out.println("Change    : " + "P   " + (calculateTotalDue() - cash));
+		System.out.println("Change    : " + "P   " + (cash - calculateTotalDue()));
 		System.out.println("");
 		System.out.println("No. of Items :      "+ totalItems);
 		System.out.println("");
@@ -65,7 +65,7 @@ public class Receipt {
 	    System.out.println("--------------------------------");
 	    System.out.printf("%-20s : P %6.2f%n", "TOTAL", calculateTotalDue());
 	    System.out.printf("%-20s : P %6.2f%n", "Cash", cash);
-	    System.out.printf("%-20s : P %6.2f%n", "Change", calculateTotalDue() - cash);
+	    System.out.printf("%-20s : P %6.2f%n", "Change", cash - calculateTotalDue());
 	    System.out.println();
 	    System.out.printf("%-20s : P %6.2f%n", "Price before VAT", calculateVAT());
 	    System.out.printf("%-20s : P %6.2f%n", "VAT (12%%)", calculateTotalDue()*0.12);
